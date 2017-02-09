@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Keynumbers</title>
+    <style>
+        div{
+            width:  150%;
+            height: 1100px;
+        }
+    </style>
+</head>
+<body id="body" >
+    <div onmousemove="mouseMove(event)">
+    <h1 id="heading"></h1>
+    </div>
+
+<script type="text/javascript">
+function mouseMove(event){
+    var elem = document.getElementById("heading");
+    elem.innerHTML = "X-Position: "+event.clientX+" Y-Postion: "+event.clientY;
+}
+
+</script>
+
+</body>
+</html>
